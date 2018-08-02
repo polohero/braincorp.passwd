@@ -1,0 +1,4 @@
+general:x:1:juan,shelley,bob 
+god:x:2:cory
+readonly:x:3:someoneelse,bob
+readonlyawesome:x:4:someoneelseawesome,bob
