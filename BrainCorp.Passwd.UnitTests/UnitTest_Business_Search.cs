@@ -676,7 +676,7 @@ namespace BrainCorp.Passwd.Testing.UnitTests
 
             List<Group> compareList = new List<Group>(2);
             compareList.Add(new Group("gid1", 3, new string[] { "gidded1", "gidded2" }));
-            compareList.Add(new Group("gid3", 4, new string[] { "gidded2", "gidded4" }));
+            compareList.Add(new Group("gid3", 5, new string[] { "gidded2", "gidded4" }));
 
             evaluate(
                 list.Count == compareList.Count,
