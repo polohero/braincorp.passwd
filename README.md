@@ -14,7 +14,7 @@ fileLocation: An enumeration to let the service know where the above 2 files are
 
 failBehavior: An enumeration to let the service know how it should handle corrupted or missing files. Acceptable values are ContinueWithOldData or FailWithCorruptedFile. The first time the service is executed it will load the files and cache them in memory. On each request it will check the last modified date of the file. If the file has not change it will used the cached value. This config tells the service to either fail, or continue with the cached data if there is a bad file. I suspect ContinueWithOldData is the best configuration as you wouldn't want a user to mess with a file to take down your whole system.
 
-dataAccessSource: An enumeration to let the service know where the files reside. Acceptable values are FileOnDisk or FileInS3. In S3 the files will be https://s3.amazonaws.com/braincorppasswd/groups.txt and https://s3.amazonaws.com/braincorppasswd/user.txt
+dataAccessSource: An enumeration to let the service know where the files reside. Acceptable values are FileOnDisk or FileInS3. Currently everything is pointing to FileOnDisk.
 
 AWS*: These values are used to access the S3 buckets in AWS.
 
